@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h3>Swetha</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class = "overlay"></div>
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="white_bg.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    
+    </video>
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="bio-card">
+                <img src="image_avatar.jpg" alt="Swetha Avatar" class="avatar" />
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/swetha-senthilkumar04" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/Swethas04" target="_blank">GitHub</a>
+                    <a href="Swetha_S_Resume.pdf" target="_blank">Resume</a>
+                </div>
+            </div>
+              
+              
+            <div class="hero-content">
+                <h1>Hi, I'm Swetha👋</h1>
+                <h2>Web Developer | UI Designer | App Developer </h2>
+                <p>I create websites, design interfaces, and build mobile apps. I enjoy making clean, functional, and user-friendly
+                digital experiences.</p>
+                <div class="hero-buttons">
+                    <a href="#project">View My Works</a>
+                    <a href="https://www.linkedin.com/in/swetha-senthilkumar04">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="skill1">
+                <img src="skill1.jpg" class="webdev">
+                <img src="wordpress.png" class="wp">
+            </div>
+            <div class="skill2">
+                <img src="flutter.png" class="flutter">
+                </div>
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p>
+                Hey there! I'm Swetha — a creative front-end developer who enjoys blending design and code. I love building clean,
+                responsive websites using <strong>HTML</strong>, <strong>CSS</strong>, and a bit of <strong>JavaScript</strong>.
+            </p>
+            <p>
+                I also design eye-catching visuals using <strong>Canva</strong> and create customizable layouts with
+                <strong>WordPress</strong>. Recently, I've been exploring <strong>Flutter</strong> to craft beautiful mobile app
+                interfaces.
+            </p>
+            <p>
+                I'm always curious, eager to learn new tools, and passionate about building user-friendly digital experiences.          
+            </p>
+        </div>
+        
+    </div>
+    </section>
+    <section id="project" class="projects-section">
+        <h1>My Projects</h1>
+        <div class="projects-container">
+            
+            <a href="https://selea.netlify.app/" target="_blank" class="project-card">
+                <img src="Selea.png" alt="Project 4">
+                <div class="project-content">
+                    <h3>Seléa</h3>
+                    <p>A calm, minimal skincare website designed and developed using <strong>HTML</strong> and <strong>CSS</strong>.
+                        Inspired by wellness brands, it features poetic content, custom hover interactions, and a soft, responsive
+                        layout.
+                    </p>
+                </div>
+            </a>
+            <a href="https://curelinehospital.netlify.app/" target="_blank" class="project-card">
+                <img src="cureline.png" alt="Project 5">
+                <div class="project-content">
+                    <h3>CureLine</h3>
+                    <p>A clean, professional hospital landing page built using <strong>HTML</strong> and <strong>CSS</strong>. Inspired by
+                        modern healthcare websites, it features calming visuals, call-to-action buttons, and a fully responsive layout for
+                        trust and accessibility.</p>
+
+                </div>
+            </a>
+            <a href="https://mi-pulse-swetha.netlify.app/" target="_blank" class="project-card">
+                <img src="MI_Pulse.png" alt="Project 6">
+                <div class="project-content">
+                    <h3>MI Pulse</h3>
+                    <p>A vibrant, fan-driven IPL website crafted with <strong>HTML</strong>, <strong>CSS</strong>, and
+                        <strong>JavaScript</strong>. Inspired by Mumbai Indians' legacy, it features animated match countdowns, interactive
+                        player profiles, and a stunning gallery for the MI Paltan.</p>
+
+                </div>
+            </a>
+            <a href="#" target="_blank" class="project-card">
+                <img src="portfolio.png" alt="Project 1">
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio built using <strong>WordPress</strong> showcasing my skills, experience, and projects.</p>
+                </div>
+            </a>
+    
+            <a href="#" target="_blank" class="project-card">
+                <img src="meowmend.png" alt="Project 2">
+                <div class="project-content">
+                    <h3>MeowMend</h3>
+                    <p>A creative pet website built from scratch using <strong>HTML</strong> and <strong>CSS</strong>, with custom animations and layout.</p>
+                </div>
+            </a>
+    
+            <a href="#" target="_blank" class="project-card">
+                <img src="studio_elara.png" alt="Project 3">
+                <div class="project-content">
+                    <h3>Studio Elara</h3>
+                    <p>A business website developed using <strong>WordPress</strong> for a design brand called Studio Elara.</p>
+                </div>
+            </a>
+            
+    
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <h1>Contact Me</h1>
+        <p>Have a project in mind or just want to say hi? Let's connect!</p>
+    
+        <div class="contact-container">
+            <form action="mailto:swethasenthilkumar.000@gamil.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+      
+       
+</body>
+</html>

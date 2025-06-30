@@ -1,0 +1,432 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue';/*, cursive, sans-serif;*/
+
+
+}
+
+body {
+    background-color: grey;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+    padding: 20px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000;
+    z-index: 1000;
+}
+
+nav {
+    text-align: end;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 4, 8);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(228, 210, 70);
+    transform: scale(1.08);
+}
+
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 100px 80px;
+    padding-top: 150px;
+    height: auto;
+    color: #000000;
+    position: relative;
+    margin-top: 100px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 15px;
+    background-color: #545151;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.hero-buttons a:hover {
+    background-color: #2e2b2b;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    max-width: 3200px;
+    width: 100%;
+}
+
+.avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.bio-card h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.bio-card p {
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+    font-weight: 600;
+    color: #383636;
+    text-decoration: none;
+    font-size: 24px;
+    gap: 15px;
+}
+
+.social-links a:hover {
+    color: #2e2b2b;
+}
+
+.bio-card,
+.social-links a {
+    position: relative;
+    z-index: 10;
+}
+
+.about-content {
+    /*padding-left:40px;*/
+    padding-top: 105px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.about p {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    max-width: 3200px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.webdev,.wp,.flutter {
+    width: 166px;
+    height: 166px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.webdev{
+    margin-left: 100px;
+    margin-top: 150px;
+    margin-bottom: 15px;
+}
+.wp {
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+.flutter {
+    margin-left: 0px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+
+.projects-section {
+    padding: 60px 40px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.projects-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.project-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    margin: 10px 0;
+    font-size: 1.25rem;
+}
+
+.project-content p {
+    font-size: 0.95rem;
+    color: #000000;
+}
+
+.contact-section {
+    padding: 80px 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #999;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.927);
+}
+
+.contact-section button {
+    padding: 12px 30px;
+    background-color: #545151;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #2e2b2b;
+}
+
+input::placeholder,textarea::placeholder {
+    color: #000;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .avatar {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .webdev,
+    .wp,
+    .flutter {
+        width: 120px;
+        height: 120px;
+        margin: 10px auto;
+    }
+
+    .about-content {
+        padding: 20px;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .project-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-section h1 {
+        font-size: 2rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-buttons a {
+        width: 80%;
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+}
